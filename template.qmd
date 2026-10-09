@@ -1,0 +1,569 @@
+---
+title: "Titre de la présentation"
+subtitle: "Sous-titre"
+author: "Prénom Nom (Insee)"
+date: today
+lang: FR-fr
+format: insee-clair-revealjs
+---
+
+
+# Titre de niveau 1
+
+:::{.logoTopRightTitre}
+![](img/LOGOS_AUVERGNE-RHONE-ALPES_SIGNATURE_CMJN.jpg)
+:::
+
+## Titre de niveau 2 {.backgroundStandard_bleu}
+
+:::{.enteteAvecTitre}
+titre de niveau 1
+:::
+
+:::{.logoTopLeftStandard}
+![](img/LOGOS_AUVERGNE-RHONE-ALPES_SIGNATURE_CMJN.jpg)
+:::
+
+
+### Titre de niveau 3
+
+#### Titre de niveau 4
+
+##### Titre de niveau 5
+
+###### Titre de niveau 6
+
+
+- liste de niveau 1
+  - liste de niveau 2
+    - liste de niveau 3
+      - liste de niveau 4
+        - liste de niveau 5
+          - liste de niveau 6
+
+::: {.notes}
+Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
+:::
+
+
+## Titre transparent {.backgroundStandard .titreTransparent data-menu-title="Slide sans titre ni numérotation"}
+
+:::{.enteteAvecTitre}
+titre de niveau 1
+:::
+
+
+::::{.rehausserContenuSansTitre}
+
+[Exercice :]{.bold}
+
+:::{.listeSansPuceNiveau1}
+- [Slide avec titre de niveau 2 caché]{.puceListFleche}
+:::
+
+:::{.callout-note}
+Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher que de ne pas en mettre du tout. Si on n'en met pas, ça fait remonter l'entête avec titre de la slide car ce dernier est positionné par rapport au titre de niveau 2.
+:::
+
+:::{.listeSansPuceNiveau1}
+- Pour ré-hausser le contenu de votre slide si celle-ci est chargée, vous pouvez encapsuler le contenu de la slide en utilisant les classes CSS suivantes sur une div (encadrement avec `::::`) :
+  - `.rehausserContenuSansTitre` si vous ne mettez pas de titre à votre section (comme c'est le cas ici)
+  - `.rehausserContenuAvecTitre` si vous mettez un titre de section visible.
+:::
+
+::::
+
+
+# Styles par défaut
+
+## Style du texte {.backgroundStandard_violet}
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+#### en markdown
+
+*texte en italique* : `*texte en italique*`
+**texte en gras** : `**texte en gras**`
+***texte en gras et en italique*** : `***texte en gras et en italique***`
+~~texte barré~~ : `~~texte barré~~`
+
+#### avec des balises html
+
+<i>texte en italique</i> :  `<i>texte en italique</i>`
+<b>texte en gras</b> : `<b>texte en gras</b>`
+<strike>texte barré</strike> : `<strike>texte barré</strike>`
+<u>texte souligné</u> : `<u>texte souligné</u>`
+<br>
+<u>_exemple de balises combinées avec markdown_</u> :  `<u>_exemple de balises combinées avec markdown_</u>`
+
+## Style du texte
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+[gras]{.bold} : `[gras]{.bold}`&emsp;
+
+[très gras]{.bolder} : `[très gras]{.bolder}`
+
+### Taille des caractères
+
+[Texte très petit]{.tiny} : `[Texte très petit]{.tiny}`
+[Texte plus petit]{.small} : `[Texte plus petit]{.small}`
+Texte standard : `Texte standard`
+[Texte plus grand]{.large} : `[Texte plus grand]{.large}`
+[Texte encore plus grand]{.Large} : `[Texte encore plus grand]{.Large}`
+
+- texte^[A footnote] : `texte^[A footnote]`
+- texte<sub>a</sub> (indice) : `texte<sub>a</sub>`
+
+## Couleurs du texte
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+[texte en noir]{.black} : `[texte en noir]{.black}`
+
+[texte en rouge]{.red} : `[texte en rouge]{.red}`
+
+[texte en bleu]{.blue} : `[texte en bleu]{.blue}`
+
+[texte en vert]{.green} : `[texte en vert]{.green}`
+
+[texte en jaune]{.yellow} : `[texte en jaune]{.yellow}`
+
+[texte en orange]{.orange} : `[texte en orange]{.orange}`
+
+[texte en violet]{.purple} : `[texte en violet]{.purple}`
+
+[texte en gris]{.gray} : `[texte en gris]{.gray}` ou `[texte en gris]{.grey}`
+
+[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee]{.jaune_insee}`
+
+[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee]{.rouge_insee}`
+
+[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee]{.vert_insee}`
+
+[Texte en bleu Insee]{.bleu_insee} : `[Texte en bleu Insee]{.bleu_insee}`
+
+## Palette de couleurs de l'Insee
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+:::: columns
+::: {.column style="text-align: center;"}
+
+#### Couleurs principales {style="margin: 5%; text-align: center; border: none;"}
+
+[B6]{.nomPaletteCouleur .dot .B6}
+[B5]{.nomPaletteCouleur .dot .B5}
+[B4]{.nomPaletteCouleur .dot .B4}
+[B3]{.nomPaletteCouleur .dot .B3}
+[B2]{.nomPaletteCouleur .dot .B2}
+[B1/2]{.nomPaletteCouleur .dot .B1demi}
+[B1]{.nomPaletteCouleur .dot .B1}
+
+[J6]{.nomPaletteCouleur .dot .J6}
+[J5]{.nomPaletteCouleur .dot .J5}
+[J4]{.nomPaletteCouleur .dot .J4}
+[J3]{.nomPaletteCouleur .dot .J3}
+[J2/3]{.nomPaletteCouleur .dot .J2tiers}
+[J2]{.nomPaletteCouleur .dot .J2}
+[J1]{.nomPaletteCouleur .dot .J1}
+
+[G6]{.nomPaletteCouleur .dot .G6}
+[G5]{.nomPaletteCouleur .dot .G5}
+[G4]{.nomPaletteCouleur .dot .G4}
+[G3]{.nomPaletteCouleur .dot .G3}
+[G2]{.nomPaletteCouleur .dot .G2}
+[G1/2]{.nomPaletteCouleur .dot .G1demi}
+[G1]{.nomPaletteCouleur .dot .G1}
+
+:::
+::: {.column style="text-align: center;"}
+
+#### Couleurs complémentaires {style="margin: 5%; text-align: center; border: none;"}
+
+[R5]{.nomPaletteCouleur .dot .R5}
+[R4]{.nomPaletteCouleur .dot .R4}
+[R3]{.nomPaletteCouleur .dot .R3}
+[R2]{.nomPaletteCouleur .dot .R2}
+[R1/2]{.nomPaletteCouleur .dot .R1demi}
+[R1]{.nomPaletteCouleur .dot .R1}
+[R0]{.nomPaletteCouleur .dot .R0}
+
+[T5]{.nomPaletteCouleur .dot .T5}
+[T4]{.nomPaletteCouleur .dot .T4}
+[T3]{.nomPaletteCouleur .dot .T3}
+[T2]{.nomPaletteCouleur .dot .T2}
+[T1/2]{.nomPaletteCouleur .dot .T1demi}
+[T1]{.nomPaletteCouleur .dot .T1}
+[T0]{.nomPaletteCouleur .dot .T0}
+
+[P5]{.nomPaletteCouleur .dot .P5}
+[P4]{.nomPaletteCouleur .dot .P4}
+[P3]{.nomPaletteCouleur .dot .P3}
+[P2]{.nomPaletteCouleur .dot .P2}
+[P1]{.nomPaletteCouleur .dot .P1}
+[P1/0]{.nomPaletteCouleur .dot .Pdemi}
+[P0]{.nomPaletteCouleur .dot .P0}
+
+[V5]{.nomPaletteCouleur .dot .V5}
+[V4]{.nomPaletteCouleur .dot .V4}
+[V3]{.nomPaletteCouleur .dot .V3}
+[V2]{.nomPaletteCouleur .dot .V2}
+[V1]{.nomPaletteCouleur .dot .V1}
+[V1/0]{.nomPaletteCouleur .dot .Vdemi}
+[V0]{.nomPaletteCouleur .dot .V0}
+
+:::
+::::
+
+[*Exemple :*]{.souligneRouge}
+
+[texte non encadré de classe V5]{.V5} : `[texte non encadré de classe V5]{.V5}`
+
+## Content-box
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+
+[`[texte encadré sur fond jaune]{.content-box-yellow}`]{.tiny}
+
+[texte encadré sur fond jaune]{.content-box-yellow}
+
+
+[`[texte encadré sur fond rouge]{.content-box-red}`]{.tiny}
+
+[texte encadré sur fond rouge]{.content-box-red}
+
+[`[texte encadré sur fond vert]{.content-box-green}`]{.tiny}
+
+[texte encadré sur fond vert]{.content-box-green}
+
+
+[`[cadre en pleine largeur]{.full-width .content-box-yellow}`]{.tiny}
+
+[cadre en pleine largeur]{.full-width .content-box-yellow}
+
+
+## Content-box (sur 2 colonnes)
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+[[`[Très serré !...]{.pull-left-30}`]{.tiny}[Très serré !...]{.content-box-yellow .full-width}]{.pull-left-30}
+[[`[Très au large !...]{.pull-right-70}`]{.tiny}[Très au large !...]{.content-box-yellow .full-width}]{.pull-right-70}
+
+[[`[Serré !...]{.pull-left-40}`]{.tiny}[Serré !...]{.content-box-red .full-width}]{.pull-left-40}
+[[`[Au large !...]{.pull-right-60}`]{.tiny}[Au large !...]{.content-box-red .full-width}]{.pull-right-60}
+
+[[`[Moitié !...]{.pull-left-50}`]{.tiny}[Moitié !...]{.content-box-green .full-width}]{.pull-left-50}
+[[`[Moitié !...]{.pull-right-50}`]{.tiny}[Moitié !...]{.content-box-green .full-width}]{.pull-right-50}
+
+[[`[Au large !...]{.pull-left-60}`]{.tiny}[Au large !...]{.content-box-red .full-width}]{.pull-left-60}
+[[`[Serré !...]{.pull-right-40}`]{.tiny}[Serré !...]{.content-box-red .full-width}]{.pull-right-40}
+
+[[`[Très au large !...]{.pull-left-70}`]{.tiny}[Très au large !...]{.content-box-yellow .full-width}]{.pull-left-70}
+[[`[Très serré !]{.pull-right-30}`]{.tiny}[Très serré !...]{.content-box-yellow .full-width}]{.pull-right-30}
+
+## Equations mathématiques
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+#### Equation sur une ligne
+
+
+$$
+TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1
+$$
+
+
+#### Equation sur plusieurs lignes
+
+<br>
+
+:::{.pull-left-50}
+
+```
+$$\begin{align}
+(a+b)^3 &=(a+b)^2(a+b)\\
+        &=(a^2+2ab+a^2)(a+b)\\
+        &=a^3+3a^2b+3ab^2+b^3
+\end{align}$$
+```
+:::
+
+:::{.pull-right-50}
+
+$$\begin{align}
+(a+b)^3 &=(a+b)^2(a+b)\\
+        &=(a^2+2ab+a^2)(a+b)\\
+        &=a^3+3a^2b+3ab^2+b^3
+\end{align}$$
+:::
+
+
+
+# Comment moduler la présentation
+
+## Modularité de fichiers quarto (.qmd) {.backgroundStandard_jaune}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+:::{.listeSansPuceNiveau1}
+- [Il est possible d'externaliser une partie du support en créant un fichier quarto et en l'intégrant dans le fichier principal avec le code suivant :]{.puceListFleche}
+:::
+
+[`{{< include 02_modulariteSupport.qmd >}}`]{.center}
+
+:::{.listeSansPuceNiveau1}
+
+- [Ce "shortcode" doit apparaitre seul sur une ligne et doit être entouré de lignes vides.]{.puceListFleche}
+- [Cela revient à copier et coller le texte du fichier inclus dans le fichier principal.]{.puceListFleche}
+- [Chaque partie lancée unitairement intègre automatiquement le style de la charte choisie, et cela grâce à l'option `*.qmd` présent dans la partie **render** du fichier [_quarto.yml]{.italic}
+]{.puceListFleche}
+- Ce fichier doit être préfixé par un ["_"]{.rouge_insee} pour ne pas être ignoré par l'option render du fichier yml.
+
+:::
+
+
+## Utilisation de variables
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+#### Utilisation du fichier _variables.yml
+
+:::{.listeSansPuceNiveau1}
+
+- [il est possible de récupérer et utiliser les variables présentes dans ce fichier avec le shortcode [var]{.rouge_insee} :]{.puceListFleche}
+[{{{< var variables.version >}}} : {{< var variables.version >}}]{.center}
+:::
+
+[[*Exemple :*]{.souligneRouge} Ainsi, au sein de l'{{< var variables.organisation >}}, vous pouvez contacter le support technique via l'adresse mail suivante : {{< var variables.supportTechnique >}}]{.tiny}
+
+
+
+#### Utilisation des métadonnées
+
+:::{.listeSansPuceNiveau1}
+
+- [Pour utiliser un mot clé présent dans les parties yml des fichiers (ex: [_quarto.yml]{.italic}), il faudra utiliser le shortcode [meta]{.rouge_insee} :]{.puceListFleche}
+:::
+
+[[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partie du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
+
+## Intégration statique de données et de code R
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+::::{.columns}
+
+:::{.column .print_code}
+
+```{.r airQualityCode}
+#| echo: true
+#| output: false
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) +
+  geom_point() +
+  geom_smooth(method = "loess")
+```
+:::
+
+:::{.column}
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{.r airQualityGraph}
+#| echo: false
+#| output: true
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+
+ggplot(airquality, aes(Temp, Ozone)) +
+  geom_point() +
+  geom_smooth(method = "loess")
+```
+:::
+::::
+
+## Intégration statique de données et de code R (part2)
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+### Exemple 1 : avec un chunk
+
+::::{.columns}
+
+:::{.column}
+
+#### {{< fa solid arrow-right >}} sans mise en forme
+
+```{.r repartition_sex_genre1}
+# repartition_sex_genre
+
+head(moy_taille_poids_selon_espece)
+
+```
+
+:::
+:::{.column}
+
+#### {{< fa solid arrow-right >}} avec une mise en forme (Kable)
+
+```{.r repartition_sex_genre2}
+# repartition_sex_genre
+
+knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = "style='width:100%;'")
+```
+
+:::
+::::
+
+## Intégration statique de données et de code R (part3)
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+### Exemple 2 : avec un chunk dans le chunk
+
+````
+---
+title: "My document"
+---
+
+#### Exemple 1 : avec un chunk
+
+```{.r}
+# repartition_sex_genre
+
+head(moy_taille_poids_selon_espece)
+
+knitr::kable(head(moy_taille_poids_selon_espece),
+        format = "html",
+        table.attr = "style='width:100%;'")
+
+```
+
+Some additional markdown content.
+
+````
+
+
+## Intégration dynamique de données {.backgroundStandard .scrollable}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+::: {.panel-tabset}
+
+## avec le package DT
+
+```{.r tableDT}
+
+DT::datatable(moy_taille_poids_selon_espece,
+              # plugins = 'scrollResize',
+              extensions = c('Buttons','Responsive'),
+              class = 'cell-border stripe',
+              rownames = TRUE,
+              # fillContainer = TRUE,
+              caption = "Moyenne de la taille et du poids des espèces animales présentes dans Starwars",
+              options = list(
+                  columnDefs = list(list(className = 'dt-center', targets = 2:3)),
+                  language = fr,
+                  dom = 'flrBtip',
+                    pageLength = 10,
+                    lengthMenu = c(5, 10, 15, 20)
+              )
+) %>%
+  formatRound(c('avg_height','avg_mass'), 2)
+
+```
+
+## avec le package Plotly
+
+:::{.centerWidget .widgetWidth80}
+```{.r Plot_taillePoid}
+
+plot_taille_poids_par_sexe
+
+```
+:::
+
+
+
+
+
+
+# Another section
+
+## This is another slide
+Coucou
+
+# Another very long section title that needs to span over 2 lines
+
+## Tatamm
+
+Et voilà du texte dedans
+
+# Et une sixième partie
+
+## Pour la gloire
+
+Tchou
+
+# Et enfin cela ne marche pas du tout Canabis
+
+## Une slide autre
+
+Que voici
+
+
+# {#pageDeFin data-menu-title="Page finale" .unnumbered}
+
+:::: {.columns .coordonneesFinales}
+
+::: {.column .gauche .coordonnees width=30%}
+- Prénom Nom
+- fonction
+- [Service]{.ligneBlancheApres}
+- [Direction]{.ligneBlancheApres}
+- prenom.nom@insee.fr
+- T: 00 00 00 00 00  M: 00 00 00 00 00
+:::
+
+::: {.column .coordonnees .milieu width=30%}
+
+:::
+
+
+::: {.column .coordonnees  .droite width=30%}
+
+:::
+
+::::

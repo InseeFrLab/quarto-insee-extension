@@ -133,7 +133,7 @@ knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = 
 :::
 ::::
 
-## Intégration statique de données et de code R (part3) {#section_2_5 .backgroundStandard}
+## Intégration statique de données et de code R (part3) {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -164,7 +164,7 @@ Some additional markdown content.
 ````
 
 
-## Intégration dynamique de données {#section_2_6 .backgroundStandard .scrollable}
+## Intégration dynamique de données {.backgroundStandard .scrollable}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -207,7 +207,7 @@ plot_taille_poids_par_sexe
 
 :::
 
-## Mise en page de graphiques générés avec Plotly {#section_2_7 .backgroundStandard}
+## Mise en page de graphiques générés avec Plotly {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -224,7 +224,7 @@ La mise en forme de l'élément interactif dépend de la nature de l'élément.
 - [Il vous faudra donc ajuster la taille de la div au graphique ou inversement pour que la mise en page soit propre.]{.puceListFleche}
 :::
 
-## Mise en page de graphiques générés avec Plotly {#section_2_8 .backgroundStandard}
+## Mise en page de graphiques générés avec Plotly {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -245,7 +245,7 @@ ggplotly(p)
 :::
 
 
-## Mise en page de graphiques générés avec ggplot2 {#section_2_9 .backgroundStandard}
+## Mise en page de graphiques générés avec ggplot2 {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -262,7 +262,7 @@ p
 ```
 
 
-## Mise en page de cartes générées avec leaflet {#section_2_10 .backgroundStandard}
+## Mise en page de cartes générées avec leaflet {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -287,7 +287,7 @@ output_map
 :::
 
 
-## Mise en page de plusieurs éléments côte à côte {#section_2_11 .backgroundStandard}
+## Mise en page de plusieurs éléments côte à côte {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?

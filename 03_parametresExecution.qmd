@@ -6,9 +6,9 @@ params:
   typeEquipement: "G103"
 ---
 
-# Paramétrer l'exécution de scripts R {#chapters_3 .backgroundTitre_vert}
+# Paramétrer l'exécution de scripts R {.backgroundTitre_vert}
 
-## Utilisation de paramètres d'exécution aux scripts R  {#section_3_1 .backgroundStandard_vert}
+## Utilisation de paramètres d'exécution aux scripts R  {.backgroundStandard_vert}
 
 :::{.enteteAvecTitre}
 Paramétrer l'exécution de scripts R
@@ -35,7 +35,7 @@ params:
 
 :::
 
-## Utilisation de paramètres d'exécution aux scripts R {#section_3_2 .backgroundStandard}
+## Utilisation de paramètres d'exécution aux scripts R {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Paramétrer l'exécution de scripts R
@@ -66,7 +66,7 @@ knitr::kable(donneesSelonDepartementEnParam,
         table.attr = "style='width:100%;'")
 ```
 
-## Utilisation de paramètres d'exécution aux scripts R {#section_3_3 .backgroundStandard}
+## Utilisation de paramètres d'exécution aux scripts R {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Paramétrer l'exécution de scripts R

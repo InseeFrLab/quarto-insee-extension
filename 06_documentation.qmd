@@ -1,7 +1,7 @@
 
-# Documentation {#chapters_6 .backgroundTitre_jaune}
+# Documentation {.backgroundTitre_jaune}
 
-## Sites de présentation {#section_6_1 .backgroundStandard_jaune}
+## Sites de présentation {.backgroundStandard_jaune}
 
 :::{.enteteAvecTitre}
 documentation
@@ -19,7 +19,7 @@ documentation
 
 - [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
 
-## Technologies utilisées {#section_6_2 .backgroundStandard_multi}
+## Technologies utilisées {.backgroundStandard_multi}
 
 :::{.enteteAvecTitre}
 documentation
@@ -31,7 +31,7 @@ documentation
 - [Documentation css](https://www.w3schools.com/css/default.asp)
 
 
-## Extensions utilisées {#section_6_3 .backgroundStandard}
+## Extensions utilisées {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentation
@@ -50,10 +50,10 @@ documentation
 
 # Titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {#chapters_7 .backgroundTitre_vert}
 
-## Sous-titre 3ème partie {#section_7_1 .backgroundStandard}
+## Sous-titre 3ème partie {.backgroundStandard}
 
 :::{.logoTopLeftStandard}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](img/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 :::{.enteteAvecTitreSur2lignes}

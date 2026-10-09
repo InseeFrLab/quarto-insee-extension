@@ -1,26 +1,15 @@
 project:
   type: default
   title: "Présentation quarto-Insee"
+  render:
+    - "index.qmd"
   output-dir: _output
   resources:
-    - "_extensions/"
-    - "css/"
-    - "data/"
     - "img/"
-    - "videos/"
-    - "js/"
-    - "R/"
-    - "modulesCompl/"
-    - "*.html"
-    - "*_files/"
-  render:
-    - "*.qmd"
-    - "!R/data.qmd"
-    
+
 format:
   insee-clair-revealjs: default
-  insee-clair-odt: default
-  
+
 fig-cap-location: bottom
 
 from: markdown+emoji
@@ -32,9 +21,3 @@ execute:
   message: false
   warning: false
   error: true
-
-revealjs-plugins:
-  - pointer
-  - confetti
-  - verticator
-  - multimodal

@@ -1,6 +1,6 @@
-# Utilisation d'une fenêtre modale {#chapters_4 .backgroundTitre_bleu}
+# Utilisation d'une fenêtre modale {.backgroundTitre_bleu}
 
-## Les popups {#section_4_1 .backgroundStandard_bleu}
+## Les popups {.backgroundStandard_bleu}
 
 :::{.enteteAvecTitre}
 utilisation d'une fenêtre modale
@@ -34,7 +34,7 @@ Il est possible d'appeler un fichier externe et de l'intégrer dans la popup en 
 >Par contre, elle n'est plus accessible lors de l'export en PDF ou .odt.
 
 
-## Les attributs {#section_4_2 .backgroundStandard_multi}
+## Les attributs {.backgroundStandard_multi}
 
 :::{.enteteAvecTitre}
 utilisation d'une fenêtre modale

@@ -1,0 +1,173 @@
+/*Sommaire*/
+
+#TOC {
+  text-align: left; 
+}
+
+#TOC ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+  justify-content: center; /* pack cards centered */
+  padding: 1rem 0;
+  list-style: none;
+  counter-reset: toc; /* start the 01/02/03 counter */
+}
+
+#TOC li {
+  counter-increment: toc;
+  flex: 0 0 calc(25% - 1rem); /* 4 per row */
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+#TOC li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* hide Quarto's inline section number ("1") — we draw our own */
+#TOC li .header-section-number {
+  display: none;
+}
+
+/* carte cliquable avec numéro en haut */
+#TOC li a {
+  display: block;
+  position: relative; /* fixer l'image et le numéro  */
+  padding: 115px 0.5rem 1rem 0; 
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 0.95em;
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* l'image de la carte, haut à gauche*/
+#TOC li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* le numéro paddé avec 0, à côté image */
+#TOC li a::after {
+  content: counter(toc, decimal-leading-zero); /* → 01, 02, 03 … */
+  position: absolute;
+  left: 70px;
+  top: 6px;
+  font-size: 6rem;
+  font-weight: 800;
+  color: #1a1a1a; /* number: black */
+  line-height: 1;
+}
+
+/* per-card flag — :nth-child replaces the filter's card-number-0N class */
+#TOC li:nth-child(1) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-1.svg);
+}
+#TOC li:nth-child(2) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-2.svg);
+}
+#TOC li:nth-child(3) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-3.svg);
+}
+#TOC li:nth-child(4) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-4.svg);
+}
+#TOC li:nth-child(5) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-5.svg);
+}
+#TOC li:nth-child(6) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-6.svg);
+}
+#TOC li:nth-child(7) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-7.svg);
+}
+#TOC li:nth-child(8) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-8.svg);
+}
+#TOC li:nth-child(9) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-9.svg);
+}
+#TOC li:nth-child(10) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-10.svg);
+}
+#TOC li:nth-child(11) a::before {
+  background-image: url(../revealJs/elements_sommaire/Element-sommaire-11.svg);
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  #TOC li {
+    flex: 0 0 calc(25% - 1rem);
+  }
+}
+@media (max-width: 900px) {
+  #TOC li {
+    flex: 0 0 calc(33% - 1rem);
+  }
+}
+@media (max-width: 600px) {
+  #TOC li {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+/*pages Titre background images fixé dans le filtre LUAauto-colors.lua*/
+
+/*pages standard background images fixé dans le filtre LUAauto-colors.lua*/
+.reveal .slide-background-content {
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Footer - seulement première slide */
+.reveal .footer .footer-logo {
+  height: 35px;
+  margin: 0 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* footer visible seulement première slide et pagedeFin*/
+.reveal .footer {
+  visibility: hidden;
+}
+.reveal:has(#title-slide.present) .footer {
+  visibility: visible;
+}
+
+.reveal:has(#pageDeFin.present) .footer {
+  visibility: visible;
+}
+
+/* logo visible seulement première slide et pagedeFin*/
+.reveal .slide-logo {
+  visibility: hidden;
+}
+.reveal:has(#title-slide.present) .slide-logo {
+  visibility: visible;
+}
+
+.reveal:has(#pageDeFin.present) .slide-logo {
+  visibility: visible;
+}
+
+/* taille de insee.fr */
+.reveal .footer .footer-logo-inseefr {
+  height: 18px;
+}
+
+/*pagesdefin background images fixés dans le filtre LUAauto-colors.lua*/
+
+/* Export to pdf : cacher le footer*/
+html.print-pdf .reveal .footer {
+  display: none !important;
+}

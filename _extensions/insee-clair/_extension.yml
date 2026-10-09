@@ -1,14 +1,32 @@
 title: insee-clair
 author: Romain Puyau
+version: 0.1.0
+quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
       header-includes: |
-        <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
-        
-      include-after-body: ["modulesCompl/footer.html"]
-      logo:  img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
+        <link rel="icon" type="image/png" sizes="32x32"
+          href="_extensions/inseefrlab/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
+
+      logo: _extensions/inseefrlab/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
+      view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
+      mobile-view-distance: 100
+
+      title-slide-attributes:
+        data-background-image: _extensions/inseefrlab/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
+        data-background-size: contain
+        data-background-opacity: "1"
       
+      # Enable the bundled reveal plugins from the format itself, so they
+      # travel with `quarto add` AND `quarto use template` (was in _quarto.yml,
+      # which is .quartoignored and never reaches the installed template).
+      revealjs-plugins:
+        - pointer
+        - confetti
+        - verticator
+        - multimodal
+        - fontawesome
       embed-resources: true
       df-print: paged
       slide-number: c/t
@@ -17,12 +35,11 @@ contributes:
       controls-tutorial: true
       controls-back-arrows: faded
       background-transition: fade
-      navigation-mode: vertical # linear/grid or vertical
+      navigation-mode: linear # linear/grid or vertical
       history: true
       transition-speed: slow
       number-sections: true
       number-depth: 2
-      
       link-external-newwindow: true
       # link-external-icon: true
       # footnotes-hover: true
@@ -32,51 +49,82 @@ contributes:
       code-copy: true
       code-annotations: hover #below / hover / select
       highlight-style: atom-one
-      
-      menu: {
-        side: 'left',
-        width: 'wide',
-        markers: true,
-        transitions: true,
-        custom: [
-            {
-              title: 'Plugins',
-              icon: '<i class="fa-solid fa-circle-info"></i>',
-              src: 'modulesCompl/customMenu.html'
-            }
-          ]
-      }
-      
+      menu:
+        side: "left"
+        width: "wide"
+        markers: true
+        transitions: true
+        custom:
+          - title: "Plugins"
+            icon: '<i class="fa-solid fa-circle-info"></i>'
+            content: |
+              <ul class="slide-menu-items defaultCursor">
+                <li class="slide-tool-item" data-item="0">
+                  <a href="#"><kbd>c</kbd> Throw confettis</a>
+                </li>
+                <li class="slide-tool-item" data-item="1">
+                  <a href="#"><kbd>q</kbd> Toggle pointer</a>
+                </li>
+                <li class="slide-tool-item" data-item="2">
+                  <a href="#"><kbd>r</kbd> Toggle Scroll View Mode</a>
+                </li>
+                <li class="slide-tool-item" data-item="3">
+                  <a href="#"><kbd>s</kbd> Activate Speaker View</a>
+                </li>
+              </ul>
+
+              <div class="messageInfoMenu">
+                <p>
+                  Contrairement aux autres rubriques dans le menu, ces raccourcis sont à titre
+                  informatif, c'est-à-dire :
+                </p>
+                <ul>
+                  <li>non cliquables dans le menu</li>
+                  <li>utilisables directement sur les slides</li>
+                </ul>
+              </div>
+
+              <div class="messageInfoMenu">
+                <p>
+                  Il est possible d'utiliser la barre d'espace ou les flèches directionnelles
+                  pour naviguer dans le support. Pour plus d'information, consulter la
+                  rubrique d'aide en cliquant sur "?".
+                </p>
+                <p>
+                  Il est possible de faire un zoom sur la partie d'une slide en cliquant sur
+                  <span class="bold">alt+clique gauche</span> de la souris. Il faut refaire la
+                  même chose pour dézoomer.
+                </p>
+              </div>
+
       width: 1920
       height: 1080
-      
-      theme: css/Insee_Commun.scss
-      css: [css/insee_clair.css, css/default.css, css/stylePerso.css]
-      
-      title-slide-attributes:
-        data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
-        data-background-size: contain
-        data-background-opacity: "1"
-        
-      toc: false
+
+      theme: ressources/css/Insee_Commun.scss
+      css: [ressources/css/insee_clair.css, ressources/css/default.css]
+
+      toc: true
       toc-title: Sommaire
       toc-depth: 1
-      template-partials:
-        - "_extensions/insee-clair/toc-slide.html"
-        - "_extensions/insee-clair/toc-style.html"
+      footer: |
+        <a href="https://www.insee.fr/fr/accueil" target="_blank"><img class="footer-logo footer-logo-inseefr" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/1_inseeFR_Noir.svg" alt="Insee.fr"></a>
+        <a href="https://bsky.app/profile/insee.fr" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_bluesky.svg" alt="Bluesky"></a>
+        <a href="https://www.instagram.com/insee_fr/" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_instagram.svg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/insee" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logoLinkedIn_rond.svg" alt="LinkedIn"></a>
+        <a href="https://x.com/InseeFr" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_X.svg" alt="X"></a>
+        <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logoYoutube_rond.svg" alt="YouTube"></a>
+        <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_blog.svg" alt="Blog"></a>
+        <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
+
       filters:
-        - "toc-filter.lua"
-        
-        
+        - auto-colors.lua
+
+
     odt:
-      reference-doc: ressources/libreOffice-template.odt
+      reference-doc: ressources/open_document/libreOffice-template.odt
       # pandoc-lua-filters: ["custom_writer.lua"]
       toc: true
       toc-title: "Sommaire"
       toc-depth: 3
       styles: true
       df-print: kable
-      
-    # pptx:
-    #   reference-doc: ressources/powerpoint-template.pptx
-    #   toc: true

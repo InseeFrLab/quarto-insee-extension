@@ -15,8 +15,8 @@ library(flextable)
 
 set_flextable_defaults(
   theme_fun = theme_box,
-  font.family = "Open Sans", 
-  font.size = 10, 
+  font.family = "Open Sans",
+  font.size = 10,
   border.color = "black",
   border.width = 0.5,
   padding = 2,
@@ -50,7 +50,7 @@ format:
 
 Pour générer le fichier au format ODT à partir de votre fichier quarto QMD, il vous faudra procéder de la même manière qu'avec le format revealJs, à savoir cliquer sur la flèche à côté du *"render"* et sélectionner **"insee-clair-odt"**. Une fois le format sélectionné durant votre session RStudio, vous pourrez les fois suivantes cliquer sur *"render"* directement.
 
-![](_extensions/insee-clair/ressources/divers/renders_quarto.png){width=100%}
+![](img/renders_quarto.png){width=100%}
 
 <br/>
 
@@ -93,7 +93,7 @@ Cependant, certaines configurations ne sont pas prises en compte par quarto et v
 Pour ce faire, vous pouvez :
 
 - soit utiliser les styles et formatages récupérés du template et présents dans votre output ;
-- soit créer de nouveaux styles et / ou modifier ceux présents dans votre output en faisant un clique droit sur le style puis *Éditer le style...*. La popup suivante apparaît : 
+- soit créer de nouveaux styles et / ou modifier ceux présents dans votre output en faisant un clique droit sur le style puis *Éditer le style...*. La popup suivante apparaît :
 
 ![Fenêtre de style et formatage du titre de niveau 1](_extensions/insee-clair/ressources/open_document/exemple_modification_writer.png){width=100%}
 
@@ -101,7 +101,7 @@ Pour ce faire, vous pouvez :
 
 Vous pouvez donc via cette fenêtre procéder aux modifications de l'élément souhaité :
 
-- soit sur le template afin que votre modification perdure dans les prochains fichiers générés. 2 possibilités : 
+- soit sur le template afin que votre modification perdure dans les prochains fichiers générés. 2 possibilités :
   - Votre modification est compatible avec quarto et sera donc directement visible dans chacun de vos outputs. (modification permanente)
   - Votre modification n'est pas compatible avec quarto. Elle n'apparaîtra pas directement dans vos outputs, mais la configuration sera, elle, reportée dans vos outputs et vous n'aurez plus qu'à l'attribuer aux éléments souhaités en double cliquant sur le formatage désiré. (modification semi-permanente)
 - soit directement sur votre output, mais dans ce cas, il vous faudra refaire la manipulation à chaque fois. (modification ponctuelle)
@@ -137,7 +137,7 @@ Le support tente de respecter la charte graphique de l'Insee en :
 - affichant le nouveau logo :
   - dans l'en-tête de chaque page en haut à gauche ;
   - dans le pied de page en bas à droite ;
-  
+
 ## Les éléments hors charte graphique
 
 Certains styles et formatages collent à la charte graphique de quarto comme les callouts. D'autres proviennent d'internet comme les émojis qu'il est possible d'intégrer dans l'output ODT.
@@ -236,8 +236,8 @@ Malheureusement, les fonctionnalités de quarto avec ce support ne sont pas enco
 
 library(ggplot2)
 
-ggplot(airquality, aes(Temp, Ozone)) + 
-  geom_point() + 
+ggplot(airquality, aes(Temp, Ozone)) +
+  geom_point() +
   geom_smooth(method = "loess")
 ```
 
@@ -293,8 +293,8 @@ knitr::kable(top_vieux)
 #| tbl-cap: "Top five oldest characters of starwars"
 #| tbl-colwidths: [30,30,20,20]
 
-top_vieux <- starwars %>% 
-  select(name, sex, gender, birth_year) %>% 
+top_vieux <- starwars %>%
+  select(name, sex, gender, birth_year) %>%
   filter(!is.na(birth_year)) %>%
   arrange(-birth_year) %>% slice_head(n = 5)
 
@@ -311,8 +311,8 @@ Voici un exemple ci-dessous de tableau stylisé avec gt, qui rend bien lorsqu'on
 ```{r}
 #<!-- #| classes: plain -->
 
-top_jeune <- starwars %>% 
-  select(name, sex, gender, birth_year) %>% 
+top_jeune <- starwars %>%
+  select(name, sex, gender, birth_year) %>%
   filter(!is.na(birth_year)) %>%
   arrange(birth_year) %>% slice_head(n = 5)
 
@@ -377,11 +377,11 @@ Pour faire une mise en forme du tableau jolie dans le writer mais non modifiable
 #| tab.width: .75
 
 
-top_jeune <- starwars %>% 
-  select(name, sex, gender, birth_year) %>% 
+top_jeune <- starwars %>%
+  select(name, sex, gender, birth_year) %>%
   filter(!is.na(birth_year)) %>%
   arrange(birth_year) %>% slice_head(n = 5) %>%
-  flextable() %>% 
+  flextable() %>%
    # Aligner le texte à gauche pour la première colonne
   align(j = 1, align = "left", part = "all") %>%
   # Centrer le texte pour les autres colonnes
@@ -419,7 +419,7 @@ Pour connaitre davantage les possibilités de mise en forme des tables, vous pou
 - liste des fonctions possibles :
   - <https://davidgohel.github.io/flextable/reference/index.html>
 
-- la cheatsheet : 
+- la cheatsheet :
   - <https://ardata-fr.github.io/flextable-book/static/pdf/cheat_sheet_flextable.pdf>
 
 - liste d'exemples d'outputs générés avec le package `flextable` :
@@ -435,7 +435,6 @@ Si vous souhaitez approfondir les possibilités de styles et de formatages dans 
 - <https://help.libreoffice.org/latest/fr/text/swriter/guide/main.html>
 
 Pour comprendre et faire la distinction entre ce qui est configuré de manière automatique et ce qui ne l'est pas mais qui est pré-formaté dans l'output, vous pouvez faire la comparaison entre l'output de ce fichier quarto (en faisant le render) et le rendu final hébergé dans ce projet dans le dossier suivant : `_extensions/insee-clair/ressources/template_writer_Final.odt`.
-
 
 
 

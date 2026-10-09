@@ -1,6 +1,6 @@
-# Comment faire un export du support de présentation ? {#chapters_5 .backgroundTitre_violet}
+# Comment faire un export du support de présentation ? {.backgroundTitre_violet}
 
-## PDF : Mode opératoire {#section_5_1 .backgroundStandard_violet}
+## PDF : Mode opératoire {.backgroundStandard_violet}
 
 :::{.enteteAvecTitre}
 Comment faire un export du support de présentation ?
@@ -19,7 +19,7 @@ Le mode export PDF est activé quand le support passe en navigation verticale (s
     - sélectionner dans le champ destination "Enregistrer au format PDF"
     - cocher l'option "Imprimer les arrières plans"
 
-## Autres formats {#section_5_2 .backgroundStandard}
+## Autres formats {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment faire un export du support de présentation ?

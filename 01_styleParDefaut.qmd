@@ -1,6 +1,6 @@
-# Styles par défaut {#chapters_1 .backgroundTitre_violet}
+# Styles par défaut 
 
-## Style du texte {#section_1_1 .backgroundStandard_violet}
+## Style du texte 
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -22,7 +22,7 @@ Styles par défaut
 <br>
 <u>_exemple de balises combinées avec markdown_</u> :  `<u>_exemple de balises combinées avec markdown_</u>`
 
-## Style du texte {#section_1_2 .backgroundStandard}
+## Style du texte
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -43,7 +43,7 @@ Texte standard : `Texte standard`
 - texte^[A footnote] : `texte^[A footnote]`
 - texte<sub>a</sub> (indice) : `texte<sub>a</sub>`
 
-## Couleurs du texte {#section_1_3 .backgroundStandard}
+## Couleurs du texte
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -73,7 +73,7 @@ Styles par défaut
 
 [Texte en bleu Insee]{.bleu_insee} : `[Texte en bleu Insee]{.bleu_insee}`
 
-## Palette de couleurs de l'Insee {#section_1_4 .backgroundStandard}
+## Palette de couleurs de l'Insee
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -152,7 +152,7 @@ Styles par défaut
 
 [texte non encadré de classe V5]{.V5} : `[texte non encadré de classe V5]{.V5}` 
 
-## Content-box {#section_1_5 .backgroundStandard}
+## Content-box
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -178,7 +178,7 @@ Styles par défaut
 [cadre en pleine largeur]{.full-width .content-box-yellow}
 
 
-## Content-box (sur 2 colonnes) {#section_1_6 .backgroundStandard}
+## Content-box (sur 2 colonnes)
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -199,7 +199,7 @@ Styles par défaut
 [[`[Très au large !...]{.pull-left-70}`]{.tiny}[Très au large !...]{.content-box-yellow .full-width}]{.pull-left-70}
 [[`[Très serré !]{.pull-right-30}`]{.tiny}[Très serré !...]{.content-box-yellow .full-width}]{.pull-right-30}
 
-## Equations mathématiques {#section_1_7 .backgroundStandard}
+## Equations mathématiques
 
 :::{.enteteAvecTitre}
 Styles par défaut

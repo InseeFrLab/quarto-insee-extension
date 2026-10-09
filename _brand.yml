@@ -2,10 +2,5 @@ typography:
   fonts:
     - family: Open Sans
       source: google
-    - family: Arial
-      source: google
-    - family: helvetica
-      source: google
   base: Open Sans
   headings: Open Sans
-  

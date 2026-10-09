@@ -13,11 +13,6 @@ chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
 mouse-wheel: false
 transition: slide
-# multiplex: true
-
-embed-resources: false
-
-custom-toc: true
 
 editor:
   render-on-save: true
@@ -29,20 +24,20 @@ params:
   typeEquipement: "G103"
 ---
 
-# Titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
+# Titre de niveau 1
 
 :::{.logoTopRightTitre}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](img/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
-## Titre de niveau 2 {#section_0_1 .backgroundStandard_bleu}
+## Titre de niveau 2
 
 :::{.enteteAvecTitre}
 titre de niveau 1
 :::
 
 :::{.logoTopLeftStandard}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](img/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 
@@ -67,7 +62,7 @@ Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture
 :::
 
 
-## Titre transparent {#section_0_2 .backgroundStandard .titreTransparent data-menu-title="Slide sans titre ni numérotation"}
+## Titre transparent {#section_0_2 .titreTransparent data-menu-title="Slide sans titre ni numérotation"}
 
 :::{.enteteAvecTitre}
 titre de niveau 1
@@ -109,8 +104,8 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 
 {{< include 06_documentation.qmd >}}
 
-          
-## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
+
+## {#pageDeFin data-menu-title="Page finale" .unnumbered}
 
 :::: {.columns .coordonneesFinales}
 
